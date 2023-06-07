@@ -24,7 +24,7 @@ class Pirate:
             pistol_damage = self.strength*2
             ninja.health -= pistol_damage
             self.bullets -= 1
-            print(f"\n{self.name} shot {ninja.name} for {int(pistol_damage)} damage! {self.name} has {self.bullets}bullets left!\n")
+            print(f"\n{self.name} shot {ninja.name} for {int(pistol_damage)} damage! {self.name} has {self.bullets} bullets left!\n")
             return self
 
     def rum (self):
@@ -32,8 +32,11 @@ class Pirate:
             print("Out of booze!")
             return self
         else:
-            self.health += 15
+            heal_amount = 15
+            self.health += heal_amount
             self.bottles -= 1
+            print(f'\n{self.name} healed for {heal_amount}!')
+            return self
 
 
 

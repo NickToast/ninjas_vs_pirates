@@ -23,7 +23,7 @@ class Ninja:
             shuriken_damage = self.strength*1.5
             pirate.health -= shuriken_damage
             self.shurikens -= 1
-            print(f"\n{self.name} threw a shuriken at {pirate.name} for {int(shuriken_damage)} damage!\n")
+            print(f"\n{self.name} threw a shuriken at {pirate.name} for {int(shuriken_damage)} damage! {self.name} has {self.shurikens} left!\n")
             return self
     
     # def backstab(self, pirate):
